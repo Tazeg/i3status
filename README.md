@@ -2,6 +2,8 @@
 
 This is a sample code to help you to build your personnal i3 bar.
 
+![i3status](i3status.jpg)
+
 It comes with :
 
 - public IP address
