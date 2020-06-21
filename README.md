@@ -17,6 +17,8 @@ It comes with :
 - volume information
 - battery information
 
+Please read [Create your own i3/sway status bar with some bash and python](https://en.jeffprod.com/blog/2020/create-your-own-i3-sway-status-bar/).
+
 ## Install
 
 In your `~/.config/i3/config` file, add the path to the script `mybar.sh` :
