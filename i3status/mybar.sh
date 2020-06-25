@@ -70,7 +70,6 @@ myvpn_on() {
   echo -n ",{"
   echo -n "\"name\":\"id_vpn\","      
   echo -n "\"full_text\":\" ${icon} VPN \","
-  echo -n "\"color\":\"#FFFFFF\","
   echo -n "\"background\":\"$bg\","
   common
   echo -n "},"
@@ -173,7 +172,6 @@ volume() {
   else
     echo -n "\"full_text\":\"  ${vol}% \","
   fi
-  echo -n "\"color\":\"#FFFFFF\","
   echo -n "\"background\":\"$bg\","
   common
   echo -n "},"
@@ -185,8 +183,7 @@ systemupdate() {
   if (( $nb > 0)); then
     echo -n ",{"
     echo -n "\"name\":\"id_systemupdate\","
-    echo -n "\"full_text\":\"  ${nb}\","
-    echo -n "\"color\":\"#FFFFFF\""
+    echo -n "\"full_text\":\"  ${nb}\""
     echo -n "}"
   fi
 }
