@@ -188,6 +188,13 @@ systemupdate() {
   fi
 }
 
+logout() {
+  echo -n ",{"
+  echo -n "\"name\":\"id_logout\","
+  echo -n "\"full_text\":\"  \""
+  echo -n "}"
+}
+
 # https://github.com/i3/i3/blob/next/contrib/trivial-bar-script.sh
 echo '{ "version": 1, "click_events":true }'     # Send the header so that i3bar knows we want to use JSON:
 echo '['                    # Begin the endless array.
@@ -209,6 +216,7 @@ do
   battery0
   volume
   systemupdate
+  logout
   echo "]"
 	sleep 10
 done) &
@@ -242,6 +250,10 @@ do
   # CRYPTO
   elif [[ $line == *"name"*"id_crypto"* ]]; then
     xdg-open https://www.livecoinwatch.com/ > /dev/null &
+
+  # LOGOUT
+  elif [[ $line == *"name"*"id_logout"* ]]; then
+    i3-nagbar -t warning -m 'Log out ?' -b 'yes' 'i3-msg exit' > /dev/null &
 
   fi  
 done

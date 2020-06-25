@@ -16,6 +16,7 @@ It comes with :
 - date and time
 - volume information
 - battery information
+- log out
 
 Please read [Create your own i3/sway status bar with some bash and python](https://en.jeffprod.com/blog/2020/create-your-own-i3-sway-status-bar/).
 
