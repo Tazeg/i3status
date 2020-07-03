@@ -44,6 +44,7 @@ You may also need to install, i.e. for Arch Linux :
 yay -S pamixer # for volume information
 yay -S pacman-contrib # for checkupdates, to count available packages
 yay -S ttf-font-awesome # for icons
+yay -S alsa-utils # for alsamixer (sound volume)
 pip3 install psutil --user # for cpu, memory, disk usage
 ```
 

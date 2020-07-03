@@ -166,7 +166,7 @@ volume() {
   separator $bg $bg_separator_previous  
   vol=$(pamixer --get-volume)
   echo -n ",{"
-  echo -n "\"name\":\"volume\","
+  echo -n "\"name\":\"id_volume\","
   if [ $vol -le 0 ]; then
     echo -n "\"full_text\":\"  ${vol}% \","
   else
@@ -250,6 +250,10 @@ do
   # CRYPTO
   elif [[ $line == *"name"*"id_crypto"* ]]; then
     xdg-open https://www.livecoinwatch.com/ > /dev/null &
+
+  # VOLUME
+  elif [[ $line == *"name"*"id_volume"* ]]; then
+    alacritty -e alsamixer &
 
   # LOGOUT
   elif [[ $line == *"name"*"id_logout"* ]]; then
