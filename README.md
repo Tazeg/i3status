@@ -14,6 +14,7 @@ It comes with :
 - memory usage
 - CPU usage
 - date and time
+- weather
 - volume information
 - battery information
 - log out
