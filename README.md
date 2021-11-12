@@ -1,6 +1,6 @@
 # i3 status bar
 
-This is a sample code to help you to build your personnal i3 bar.
+This is a sample code to help you to build your personal i3 bar.
 
 ![i3status](i3status.jpg)
 
@@ -35,7 +35,11 @@ Replace `/home/you` in this project with your home path.
 
 Copy the files from this `i3status` repository directory to `~/.config/i3status`.
 
-Please, check and modify each script as it is given as an example working actually on Arch Linux (You may not have ProtonVPN, and you need to set you city for the weather informations...)
+⚠️ Please, read and modify each script !
+
+- it is given as an example. You may not have ProtonVPN. You need to set you city for the weather informations...
+- Replace `/home/you/` with your home path in the `mybar.sh` file.
+- if you get errors, try to run each bash and python script separately.
 
 Restart i3 : `MOD4+SHIFT+R`.
 
